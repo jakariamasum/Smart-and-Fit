@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex:3
+} 
+.right{
+    flex:1
+}
