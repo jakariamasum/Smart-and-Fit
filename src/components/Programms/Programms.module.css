@@ -1,0 +1,22 @@
+.programms {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+.programmTitle {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+}
+
+.programmCategories {
+    display: flex;
+    gap: 1rem;
+}
