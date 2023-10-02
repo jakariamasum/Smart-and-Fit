@@ -1,0 +1,11 @@
+.btn {
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 4px solid transparent;
+    transition: 400ms all;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer
+}

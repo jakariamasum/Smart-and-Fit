@@ -1,17 +1,22 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navmenu{
+.header>h2 {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.navmenu {
     list-style: none;
     display: flex;
     gap: 2rem;
     color: white;
 }
 
-.navmenu>li:hover{
+.navmenu>li:hover {
     color: var(--orange);
     cursor: pointer;
 }
