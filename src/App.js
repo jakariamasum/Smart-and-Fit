@@ -3,13 +3,15 @@ import Hero from './components/Hero/Hero';
 import Plans from './components/Plans/Plans';
 import Programms from './components/Programms/Programms';
 import Reasons from './components/Reasons/Reasons';
+import Testimonials from './components/Testimonials/Testimonials';
 function App() {
   return (
     <div className="App">
-      <Hero/>
-      <Programms/>
-      <Reasons/>
-      <Plans/>
+      <Hero />
+      <Programms />
+      <Reasons />
+      <Plans />
+      <Testimonials />
     </div>
   );
 }
