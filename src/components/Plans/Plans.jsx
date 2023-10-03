@@ -5,6 +5,8 @@ import PlansCard from '../PlansCard/PlansCard';
 const Plans = () => {
     return (
         <div className={Style.container}>
+            <div className={`make-blur ${Style.leftBlur}`}></div>
+            <div className={`make-blur ${Style.rightBlur}`}></div>
             <Title firstText={'ready to start'} middleText={'your journey'} lastText={'now withus'}/>
             <div className={Style.plans}>
                 {

@@ -30,3 +30,21 @@
     font-size: 4rem;
     color: var(--orange);
 }
+
+.leftBlur {
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    background: red;
+    filter: blur(200px);
+}
+
+.rightBlur {
+    bottom: 0;
+    left: 15%;
+    width: 26rem;
+    height: 12rem;
+    background: rgb(255, 155, 0);
+    filter: blur(200px);
+}

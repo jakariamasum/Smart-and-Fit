@@ -13,3 +13,15 @@
     justify-content: center;
     gap: 3rem;
 }
+.leftBlur{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0;
+}
+.rightBlur{
+    width: 32rem;
+    height: 23rem;
+    right: 0;
+    top: 10rem;
+}

@@ -9,6 +9,7 @@ import heroBack from '../../assets/hero_image_back.png'
 const Hero = () => {
     return (
         <div className={styles.hero}>
+            <div className={`make-blur ${styles.blur}`}></div>
             <div className={styles.left}>
                 <Navbar />
                 <div className={styles.bestClub}>

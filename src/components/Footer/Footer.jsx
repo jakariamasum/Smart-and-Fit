@@ -1,5 +1,4 @@
 import Styles from './Footer.module.css';
-import logo from '../../assets/logo.png'
 import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
 import instagram from '../../assets/instagram.png'
@@ -17,6 +16,8 @@ const Footer = () => {
                     <span>Smart and Fit</span>
                 </div>
             </div>
+            <div className={`make-blur ${Styles.leftBlur}`}></div>
+            <div className={`make-blur ${Styles.rightBlur}`}></div>
         </div>
     );
 };
