@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 import bar from '../../assets/bars.png'
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 const Navbar = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
     const [open, setOpen] = useState(false);
@@ -14,11 +15,21 @@ const Navbar = () => {
                     </div>
                 ) : (
                     <ul className={styles.navmenu}>
-                        <li onClick={()=>setOpen(false)}>Home</li>
-                        <li onClick={()=>setOpen(false)}>Programms</li>
-                        <li onClick={()=>setOpen(false)}>Why Us</li>
-                        <li onClick={()=>setOpen(false)}>Plans</li>
-                        <li onClick={()=>setOpen(false)}>Testimonials</li>
+                        <li onClick={()=>setOpen(false)}>
+                            <Link to='home' spy={true} smooth={true} onClick={()=>setOpen(false)}>Home</Link>
+                        </li>
+                        <li onClick={()=>setOpen(false)}>
+                        <Link to='programms' spy={true} smooth={true} onClick={()=>setOpen(false)}>Programms</Link>
+                        </li>
+                        <li onClick={()=>setOpen(false)}>
+                        <Link to='reasons' spy={true} smooth={true} onClick={()=>setOpen(false)}>Why Us</Link>
+                        </li>
+                        <li onClick={()=>setOpen(false)}>
+                        <Link to='plans' spy={true} smooth={true} onClick={()=>setOpen(false)}>Plans</Link>
+                        </li>
+                        <li onClick={()=>setOpen(false)}>
+                        <Link to='testimonials' spy={true} smooth={true} onClick={()=>setOpen(false)}>Testimonials</Link>
+                        </li>
                     </ul>
                 )
             }

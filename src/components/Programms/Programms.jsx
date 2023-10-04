@@ -5,7 +5,7 @@ import ProgrammCard from '../ProgrammCard/ProgrammCard';
 import Title from '../Title/Title';
 const Programms = () => {
     return (
-        <div className={Styles.programms}>
+        <div className={Styles.programms} id='programms'>
             <Title firstText='Explore our' middleText={'programms'} lastText={'to shape you'} />
             <div className={Styles.programmCategories}>
                 {

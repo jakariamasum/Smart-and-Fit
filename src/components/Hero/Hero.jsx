@@ -11,7 +11,7 @@ const Hero = () => {
     const transition= {type:'spring',duration:3}
     const mobile= window.innerWidth<=768?true:false;
     return (
-        <div className={styles.hero}>
+        <div className={styles.hero} id='home'>
             <div className={`make-blur ${styles.blur}`}></div>
             <div className={styles.left}>
                 <Navbar />

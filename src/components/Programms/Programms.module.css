@@ -9,6 +9,9 @@
     display: flex;
     gap: 1rem;
 }
-.programmCategories{
-    flex-direction: column;
+
+@media screen and (max-width:768px) {
+    .programmCategories {
+        flex-direction: column;
+    }
 }

@@ -4,7 +4,7 @@ import linkedin from '../../assets/linkedin.png'
 import instagram from '../../assets/instagram.png'
 const Footer = () => {
     return (
-        <div className={Styles.container}>
+        <div className={Styles.container} id='footer'>
             <hr />
             <div className={Styles.footer}>
                 <div className={Styles.socialLinks}>

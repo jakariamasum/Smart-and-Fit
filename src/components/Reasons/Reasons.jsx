@@ -9,7 +9,7 @@ import nb from '../../assets/nb.png'
 import adidas from '../../assets/adidas.png'
 const Reasons = () => {
     return (
-        <div className={Style.reasons}>
+        <div className={Style.reasons} id='reasons'>
             <div className={Style.left}>
                 <img src={Image1} alt="" />
                 <img src={Image2} alt="" />
