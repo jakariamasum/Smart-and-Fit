@@ -9,6 +9,7 @@ import heroBack from '../../assets/hero_image_back.png'
 import {motion} from 'framer-motion'
 const Hero = () => {
     const transition= {type:'spring',duration:3}
+    const mobile= window.innerWidth<=768?true:false;
     return (
         <div className={styles.hero}>
             <div className={`make-blur ${styles.blur}`}></div>
@@ -16,7 +17,7 @@ const Hero = () => {
                 <Navbar />
                 <div className={styles.bestClub}>
                     <motion.div 
-                    initial={{left:'158px'}}
+                    initial={{left:mobile?'120px':'158px'}}
                     whileInView={{left:'8px'}}
                     transition={{...transition,type:'tween'}}
 

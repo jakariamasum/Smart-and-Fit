@@ -186,3 +186,70 @@
     height: 30rem;
     left: 0;
 }
+@media screen and (max-width:768px)
+{
+    .hero{
+        flex-direction: column;
+    }
+    .blur{
+        width: 14rem;
+    }
+    .bestClub{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .heroText{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .heroText>div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btns{
+        justify-content: center;
+    }
+    .stats>div>span:nth-child(1){
+        font-size: large;
+    }
+    .stats>div>span:nth-child(2){
+        font-size: small;
+    }
+    .right{
+        position: relative;
+        background: none;
+    }
+    .right>:nth-child(2){
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        color: white;
+        font-size: 1rem;
+    }
+    .heroImage{
+        position: relative;
+        left: 7rem;
+        top: 4rem;
+        width: 15rem;
+        align-self: center;
+    }
+    .heroBack{
+        top: 0;
+        left: 2rem;
+        width: 15rem;
+    }
+}
