@@ -26,11 +26,6 @@
     height: 2rem;
 }
 
-.logo {
-    font-size: 4rem;
-    color: var(--orange);
-}
-
 .leftBlur {
     bottom: 0;
     right: 15%;

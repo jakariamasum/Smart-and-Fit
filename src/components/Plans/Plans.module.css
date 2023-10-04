@@ -25,3 +25,9 @@
     right: 0;
     top: 10rem;
 }
+
+@media screen and (max-width:7698px) {
+    .plans{
+        flex-direction: column;
+    }
+}
