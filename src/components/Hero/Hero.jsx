@@ -6,14 +6,22 @@ import heart from '../../assets/heart.png';
 import calogry from '../../assets/calories.png'
 import hero from '../../assets/hero_image.png'
 import heroBack from '../../assets/hero_image_back.png'
+import {motion} from 'framer-motion'
 const Hero = () => {
+    const transition= {type:'spring',duration:3}
     return (
         <div className={styles.hero}>
             <div className={`make-blur ${styles.blur}`}></div>
             <div className={styles.left}>
                 <Navbar />
                 <div className={styles.bestClub}>
-                    <div></div>
+                    <motion.div 
+                    initial={{left:'158px'}}
+                    whileInView={{left:'8px'}}
+                    transition={{...transition,type:'tween'}}
+
+                    >
+                    </motion.div>
                     <span>the best fit club in town</span>
                 </div>
                 <div className={styles.heroText}>
@@ -42,21 +50,33 @@ const Hero = () => {
                 <div>
                     <Button text={'Join Now'} />
                 </div>
-                <div>
+                <motion.div
+                 initial={{right:'-1rem'}}
+                 whileInView={{right:'4rem'}}
+                 transition={transition}
+                 >
                     <img src={heart} alt="heart" />
                     <span>Heart Bit </span>
                     <span>106 bpm</span>
-                </div>
+                </motion.div>
                 <img src={hero} alt="" className={styles.heroImage} />
-                <img src={heroBack} alt="" className={styles.heroBack} />
+                <motion.img
+                initial={{right:'11rem'}}
+                whileInView={{right:'20rem'}}
+                transition={transition}
+                src={heroBack} alt="" className={styles.heroBack} />
 
-                <div className={styles.calories}>
+                <motion.div 
+                initial={{right:"37rem"}}
+                whileInView={{right:'28rem'}}
+                transition={transition}
+                className={styles.calories}>
                     <img src={calogry} alt="" />
                     <div>
                         <span>Calories burned</span>
                         <span>220 kcal</span>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
