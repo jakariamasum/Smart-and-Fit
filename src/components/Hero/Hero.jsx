@@ -38,9 +38,9 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className={styles.stats}>
-                    <Stats value={100} text={'coaches'} />
-                    <Stats value={80} text={'memeber joined'} />
-                    <Stats value={50} text={'fitness programm'} />
+                    <Stats value={150} text={'coaches'} />
+                    <Stats value={200} text={'memeber joined'} />
+                    <Stats value={120} text={'fitness programm'} />
                 </div>
                 <div className={styles.btns}>
                     <Button text={'Get Started'} />
